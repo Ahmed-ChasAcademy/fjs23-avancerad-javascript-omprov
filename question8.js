@@ -10,6 +10,8 @@ const tweets = [
 
 // Din kod här:
 
+const filteredTweets = tweets.filter(tweet => tweet.id != 827364)
+console.log(filteredTweets)
 
 
 
@@ -19,13 +21,23 @@ const tweets = [
 
 // Din kod här:
 
+function tweetshtml(array){
+  const tweetsList = document.getElementById("tweets")
+  const tweetEl = document.createElement("li")
 
+
+  for (let i = 0; i < array.length; i++){
+    tweetEl.innerText = "hello"
+    tweetsList.append(tweetEl)
+  }
+}
+
+tweetshtml(tweets)
 
 
 
 
 // Test
-console.log(updatedTweets); // Ska logga en array utan kommentaren med id 823423
 // [
 //   { text: 'Elon Musk is ...', id: 523423 },
 //   { text: 'The future of AI ...', id: 2039842 },

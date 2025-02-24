@@ -19,8 +19,9 @@ const authors = [
   ];
 
   function calculateLifespans(authors) {
-    // Din kod här
 
+    let lifeSpans = authors.map(author => (author.passed - author.year))
+    console.log(lifeSpans)
   }
 
 // Test

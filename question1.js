@@ -8,11 +8,19 @@ const book = {
 };
 // Din kod här:
 
+const book2 = ({...book})
+
+
+
 
 // 1.2 (1p) Skapa tre variabler title och author genom
 // destructuring av objektet book.
 
 // Din kod här:
+
+const {title, author, numberOfPages} = book
+
+console.log(title, author, numberOfPages)
 
 
 

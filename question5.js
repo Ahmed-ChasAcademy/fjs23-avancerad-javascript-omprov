@@ -13,11 +13,14 @@ const booksInCart = [
 
   
   function calculateTotalBookPrice(cart) {
-    // Din kod här
+
+    let sum = cart.reduce((acc, curr) => acc + curr.price, 0);
+    console.log(`$${sum}`) 
 
   }
   
 
   // Test
   console.log(`$${calculateTotalBookPrice(booksInCart)}`);// Ska logga:  $77
+
   
